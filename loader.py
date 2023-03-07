@@ -112,7 +112,7 @@ class DirectoryReader:
 	def has_record(self, path):
 		full_path = os.path.join(self.directory, path)
 		return os.path.isfile(full_path)
-
+'''
 	def get_all_records(
 		self,
 	):
@@ -121,7 +121,7 @@ class DirectoryReader:
 			if not os.path.isdir(filename):
 				files.append(filename[len(self.directory) + 1 :])
 		return files
-
+'''
 
 def test_model():
 
@@ -150,8 +150,9 @@ def test_model():
 
 def main():
 
-	test_model()
-	return
+	if 1:
+		test_model()
+		return
 
 	total_size = 0
 
